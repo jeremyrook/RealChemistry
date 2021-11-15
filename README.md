@@ -34,3 +34,7 @@
 
 - ex: http://localhost:8000/
 
+# Other Information
+
+- Layouts
+  - used Reactstrap, Bootstrap, utility classes, and css for formatting and resposiveness

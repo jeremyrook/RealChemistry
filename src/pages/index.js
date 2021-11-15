@@ -4,23 +4,21 @@ import Layout from "../components/layout/layout"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // data
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-]
+// const links = [
+//   {
+//     text: "Tutorial",
+//     url: "https://www.gatsbyjs.com/docs/tutorial/",
+//     description:
+//       "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+//     color: "#E95800",
+//   },
+// ]
 
 // markup
 export default class IndexPage extends React.Component {
   constructor() {
     super();
-    this.state = {
-      campaign : [],
-    }
+    
   }
 
   async componentDidMount(){
@@ -35,13 +33,9 @@ export default class IndexPage extends React.Component {
     return(
 
       <Layout>
-        <div className="text-center">
-          <h1 className="mb-5 pb-4 font-weight-bold border-bottom text-center">Index Page</h1>
-          <Col className="d-flex">
-            <Col className="d-flex">
-              {/* {campaignData} */}
-            </Col>
-          </Col>
+        <div className="text-center py-5">
+          <h1 className="font-weight-bold text-center">ODS Consumer Fact Sheets</h1>
+          
         </div>
 
       </Layout>
