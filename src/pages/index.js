@@ -1,6 +1,7 @@
 import React from "react"
 import {Col} from "reactstrap"
 import Layout from "../components/layout/layout"
+import ImageContainer from "../components/image";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // data
@@ -33,8 +34,10 @@ export default class IndexPage extends React.Component {
     return(
 
       <Layout>
-        <div className="text-center py-5">
-          <h1 className="font-weight-bold text-center">ODS Consumer Fact Sheets</h1>
+        <div className="text-center ">
+          <h1 className="py-5 font-weight-bold text-center">ODS Consumer Fact Sheets</h1>
+          {/* <ImageContainer image= "./images/food_pour.jpg" /> */}
+          <ImageContainer />
           
         </div>
 
