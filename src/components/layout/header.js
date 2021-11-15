@@ -1,39 +1,43 @@
 import React from "react";
-import {NavbarBrand, Collapse, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, Navbar, Nav, NavbarToggler, DropdownMenu, DropdownItem, NavbarText} from "reactstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {NavbarBrand, Collapse, NavItem, NavLink, Navbar, Nav, NavbarToggler, DropdownMenu, DropdownItem, NavbarText} from "reactstrap";
 
-const Navigation = () => {
-    
+
+export default class Navigation extends React.Component {
+    constructor(props) {
+        super(props);
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+}
+
+toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+  render(){
     return(
         <div>
+            
             <Navbar color="light" expand="md" fixed="top" light>
                 <NavbarBrand href="/">
                 ODS Health
                 </NavbarBrand>
 
-                <NavbarToggler onClick={function noRefCheck(){}} />
+                <NavbarToggler onClick={this.toggle} />
                 <Collapse navbar>
                 <Nav className="me-auto" navbar>
                     <NavItem>
-                        <NavLink href="/components/">
-                            Components
+                        <NavLink href="https://ods.od.nih.gov/HealthInformation/healthprofessional.aspx">
+                            Health Information
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="https://github.com/reactstrap/reactstrap">
-                            GitHub
+                        <NavLink href="https://ods.od.nih.gov/factsheets/list-all/">
+                            Facts Sheet
                         </NavLink>
                     </NavItem>
-                    <UncontrolledDropdown
-                    inNavbar
-                    nav
-                    >
-                    <DropdownToggle
-                        caret
-                        nav
-                    >
-                        Options
-                    </DropdownToggle>
                     <DropdownMenu end>
                         <DropdownItem>
                         Option 1
@@ -42,18 +46,12 @@ const Navigation = () => {
                         Option 2
                         </DropdownItem>
                         <DropdownItem divider />
-                        <DropdownItem>
-                        Reset
-                        </DropdownItem>
                     </DropdownMenu>
-                    </UncontrolledDropdown>
-                </Nav>
-                <NavbarText>
-                    Simple Text
-                </NavbarText>
+                </Nav>                
                 </Collapse>
   </Navbar>
+  
 </div>
         )
 }
-export default Navigation
+}

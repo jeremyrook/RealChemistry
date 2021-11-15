@@ -1,6 +1,7 @@
 import React from "react"
 import {Col} from "reactstrap"
 import Layout from "../components/layout/layout"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // data
 const links = [
@@ -31,10 +32,6 @@ export default class IndexPage extends React.Component {
  
   
   render(){
-    // let campaignData = this.state.campaign[6].results((data) => {
-    //   return data
-
-    // })
     return(
 
       <Layout>
