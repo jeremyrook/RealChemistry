@@ -1,5 +1,6 @@
 import React from "react"
-import {Col, Row} from "reactstrap"
+import {Col} from "reactstrap"
+import Layout from "../components/layout/layout"
 
 // data
 const links = [
@@ -30,17 +31,24 @@ export default class IndexPage extends React.Component {
  
   
   render(){
-    
+    // let campaignData = this.state.campaign[6].results((data) => {
+    //   return data
+
+    // })
     return(
+
+      <Layout>
         <div className="text-center">
           <h1 className="mb-5 pb-4 font-weight-bold border-bottom text-center">Index Page</h1>
           <Col className="d-flex">
-            <Col className="d-flex" lg={6}>
-              <Col lg={6}></Col>
-              <Col lg={6}></Col>
+            <Col className="d-flex">
+              {/* {campaignData} */}
             </Col>
           </Col>
         </div>
+
+      </Layout>
+        
     )
   }
 }
