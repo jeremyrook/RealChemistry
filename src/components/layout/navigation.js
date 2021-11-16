@@ -13,11 +13,11 @@ export default class Navigation extends React.Component {
 }
 
 toggle() {
-    
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
+  
   render(){
     return(
         <div className="">
