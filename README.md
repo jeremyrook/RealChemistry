@@ -5,6 +5,8 @@
 - Node version >=14
   -  Install or upgrade Node: https://nodejs.org/en/download/
 
+# Steps to launch in browser
+
 1. Clone the repo
 
 ``` git clone https://github.com/jeremyrook/RealChemistry.git ```
