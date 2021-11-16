@@ -10,16 +10,9 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 // markup
 export default class IndexPage extends React.Component {
 
-  async componentDidMount(){
-    const URL = "https://api.digitalmedia.hhs.gov/api/v2/resources/campaigns.json";
-    const response = await fetch(URL);
-    const data = await response.json();
-    console.log(data.results)
-  }
- 
   render(){
     return(
-      
+
       // src/components/layout/layout  
       <Layout>
         
