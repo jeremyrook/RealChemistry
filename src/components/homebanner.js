@@ -6,10 +6,10 @@ import "../scss/homebanner.scss"
 const HomeBanner = () => {
     return(
         <Row className="banner no-gutters w-100 mx-auto border-bottom">
-            <Col className="py-2" md="6">
+            <Col md="6">
                 <StaticImage src="../images/medical_people.jpeg"  alt="Medical people" placeholder="blurred"/>
             </Col>
-            <Col className="py-2 pt-md-5 banner-description" md="6">
+            <Col className="px-3 pt-md-5 banner-description" md="6">
                 <p className="banner-description-text">Many adults and children in the United States take one or more vitamins or other dietary supplements. 
               In addition to vitamins, dietary supplements can contain minerals, herbs or other botanicals, amino acids, enzymes, and many other ingredients.
               Dietary supplements come in a variety of forms, including tablets, capsules, gummies, and powders, as well as drinks and energy bars. 
