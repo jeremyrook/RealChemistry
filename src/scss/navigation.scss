@@ -1,0 +1,21 @@
+.navigation{
+    background-color: rgba(50, 50, 200, .2);
+    &-items{
+        background-color: #ffd050;
+    }
+
+}
+.navbar{
+    @media (min-width: 1200px){
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    
+    
+}
+.nav-item{
+    text-align:end;
+    color:#fff;
+
+    
+}

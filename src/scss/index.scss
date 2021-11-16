@@ -1,0 +1,23 @@
+.site-title{
+            animation: fadeIn linear 2s;
+    }
+    @keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+.banner{
+    
+    background-image: url(../images/wood_bg.jpg);
+   &-description{
+        // background-image: url(../images/wood_bg.jpg);
+       color:#fff;
+       font-size: 20px;
+   }
+}
+.carousel{
+    max-width:800px;
+    &-slider{
+        margin-left:auto!important;
+        margin-right:auto!important;
+    }
+}

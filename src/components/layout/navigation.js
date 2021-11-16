@@ -1,6 +1,6 @@
 import React from "react";
 import {NavbarBrand, Collapse, NavItem, NavLink, Navbar, Nav, NavbarToggler} from "reactstrap";
-import '../../scss/header.scss';
+import '../../scss/navigation.scss';
 
 export default class Navigation extends React.Component {
     constructor(props) {
@@ -19,8 +19,8 @@ toggle() {
   }
   render(){
     return(
-    <div >
-        <Navbar className="navigation" color="faded" light fixed="top">
+    <div className="">
+        <Navbar className="navigation-items mx-auto" color="faded" light fixed="top">
             <NavbarBrand className="me-auto" href="/">
             ODS Health
             </NavbarBrand>
