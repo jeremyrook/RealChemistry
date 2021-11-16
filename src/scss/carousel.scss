@@ -1,0 +1,19 @@
+.carousel{
+    max-width:800px;
+    
+    &-slider{
+        margin-left:auto!important;
+        margin-right:auto!important;
+    }
+    .control-arrow{
+        width:50px;
+    }
+    .control-dots{
+        margin-bottom:0 !important;
+
+        .dot{
+            background:#000!important;
+
+        }
+    }
+}

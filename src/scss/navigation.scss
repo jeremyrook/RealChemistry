@@ -1,0 +1,23 @@
+.navigation{
+    &-items{
+        background-color: #1d4b82;
+    }
+}
+
+.navbar{
+    @media (min-width: 1200px){
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    &-nav{
+        .nav-link{
+                color:#fff!important;
+        }
+    }
+}
+
+.nav-item{
+    text-align:end;
+    color:#fff;
+}
