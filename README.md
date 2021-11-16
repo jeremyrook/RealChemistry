@@ -47,3 +47,14 @@
   - ``` yarn add <component-repo>```
   - At top of page you want to place component:
     - ``` import <component-name> from <component-repo> ```
+
+# Open Source Used
+
+  - ReactStrap
+    - https://reactstrap.github.io/?path=/story/home-installation--page
+
+  - Gatsby
+    - https://www.gatsbyjs.com/
+
+  - React-Responsive-Carousel
+    - https://www.npmjs.com/package/react-responsive-carousel
