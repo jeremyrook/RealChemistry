@@ -1,8 +1,8 @@
 # RealChemistry
-# Repository for interactive health page
+# Repository for health page
 
 # Prerequisites
-- Node version >=12
+- Node version >=14
   -  Install or upgrade Node: https://nodejs.org/en/download/
 
 # Clone the repo
@@ -37,4 +37,11 @@
 # Other Information
 
 - Layouts
-  - used Reactstrap, Bootstrap, utility classes, and css for formatting and resposiveness
+  - used Reactstrap, Bootstrap, utility classes, and css for formatting and resposiveness.
+
+- When resizing in browser, may need to refresh the page after resizing for accurate display.
+
+- To add new component:
+  - ``` yarn add <component-repo>```
+  - At top of page you want to place component:
+    - ``` import <component-name> from <component-repo> ```
